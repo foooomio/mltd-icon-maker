@@ -1,0 +1,142 @@
+@import url('https://cdn.jsdelivr.net/gh/miyacorata/imas-css/MLTD/button.css');
+@import url('https://cdn.jsdelivr.net/gh/miyacorata/imas-css/MLTD/msgbox.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 12px/1.7 'M PLUS 1p', sans-serif;
+  margin: 0;
+  background-image:
+    repeating-linear-gradient(45deg, #ffffff80, #ffffff80 1px, #fff0 2px, #fff0 40px),
+    repeating-linear-gradient(-45deg, #ffffff80, #ffffff80 1px, #fff0 2px, #fff0 40px),
+    linear-gradient(#d8e5ee, #b8c1c8, #d8e5ee);
+  background-attachment: fixed;
+}
+
+header {
+  background-image: linear-gradient(#fbe988, #c5b36b);
+  color: #333;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+}
+
+#container {
+  height: min(100vw, 500px);
+}
+
+.konvajs-content, .konvajs-content > canvas {
+  width: min(100vw, 500px) !important;
+  height: min(100vw, 500px) !important;
+  background-color: #ccc;
+}
+
+.msgbox {
+  margin: 2rem 0.8rem;
+}
+
+.msgboxbody {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.control {
+  text-align: center;
+  margin: 0.4rem 0;
+}
+
+.control .button {
+  display: inline-block;
+  width: 40%;
+  padding: 0.4rem;
+  font-size: larger;
+  font-family: inherit;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.control input[type="file"] {
+  display: none;
+}
+
+.control input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000;
+  padding: 1px;
+  background-clip: content-box, padding-box;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#ccc, #ccc);
+  box-shadow: 0 0 0 2px #fff, 1.2px 0 2px 2.4px #333;
+  transform: rotate(45deg);
+  cursor: pointer;
+  margin: 0 7px;
+}
+
+.control input[type="radio"]:checked {
+  background-image: linear-gradient(to bottom right, #fbe988, #c5b36b), linear-gradient(#fbe988, #fbe988);
+}
+
+#badge {
+  font-size: larger;
+  margin: 0.4rem auto;
+}
+
+#output {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+#tweet-text {
+  width: 100%;
+  border-radius: 4px;
+  font: inherit;
+  resize: none;
+}
+
+#tweet-button {
+  background-color: #1da1f2;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 9999px;
+  font-family: inherit;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.disclaimer {
+  padding-left: 1.2rem;
+}
+
+.license {
+  margin: 0.4rem 0;
+}
+
+.license .license-title {
+  padding-left: 0.4rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.license .license-text {
+  font-size: 10px;
+  white-space: pre-wrap;
+}
